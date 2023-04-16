@@ -314,6 +314,16 @@ void initialise_answers()
     answers[23] = X;
     answers[24] = Y;
     answers[25] = Z;
+    answers[26] = ONE;
+    answers[27] = TWO;
+    answers[28] = THREE;
+    answers[29] = FOUR;
+    answers[30] = FIVE;
+    answers[31] = SIX;
+    answers[32] = SEVEN;
+    answers[33] = EIGHT;
+    answers[34] = NINE;
+    answers[35] = ZERO;
     answer_names[0] = "A";
     answer_names[1] = "B";
     answer_names[2] = "C";
@@ -388,16 +398,7 @@ void initialise_answers()
     answer_word_names[15] = "IRELAND";
     answer_word_names[16] = "TRINITY";
     answer_word_names[17] = "COLLEGE";
-    answer_word_names[18] = "ZERO";
-    answer_word_names[19] = "ONE";
-    answer_word_names[20] = "TWO";
-    answer_word_names[21] = "THREE";
-    answer_word_names[22] = "FOUR";
-    answer_word_names[23] = "FIVE";
-    answer_word_names[24] = "SIX";
-    answer_word_names[25] = "SEVEN";
-    answer_word_names[26] = "EIGHT";
-    answer_word_names[27] = "NINE";
+
 }
 // End the game and print the stats
 void end_the_game()
