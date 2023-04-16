@@ -340,6 +340,16 @@ void initialise_answers()
     answer_names[23] = "X";
     answer_names[24] = "Y";
     answer_names[25] = "Z";
+    answer_names[18] = ZERO;
+    answer_names[19] = ONE;
+    answer_names[20] = TWO;
+    answer_names[21] = THREE;
+    answer_names[22] = FOUR;
+    answer_names[23] = FIVE;
+    answer_names[24] = SIX;
+    answer_names[25] = SEVEN;
+    answer_names[26] = EIGHT;
+    answer_names[27] = NINE;
 
     answer_word[0] = TO;
     answer_word[1] = ME;
@@ -359,16 +369,7 @@ void initialise_answers()
     answer_word[15] = IRELAND;
     answer_word[16] = TRINITY;
     answer_word[17] = COLLEGE;
-    answer_word[18] = ZERO;
-    answer_word[19] = ONE;
-    answer_word[20] = TWO;
-    answer_word[21] = THREE;
-    answer_word[22] = FOUR;
-    answer_word[23] = FIVE;
-    answer_word[24] = SIX;
-    answer_word[25] = SEVEN;
-    answer_word[26] = EIGHT;
-    answer_word[27] = NINE;
+ 
     answer_word_names[0] = "TO";
     answer_word_names[1] = "ME";
     answer_word_names[2] = "MOM";
