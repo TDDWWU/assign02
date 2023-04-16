@@ -191,6 +191,7 @@ void addMorse(char input)
                 printf("The translated input was: %s\n", sequence_to_letters());
                 lives--;
                 incorrect_answers++;
+                wins = 0;
                 change_led_color(lives);
             }
             if (level == 2 || level == 4)
@@ -206,13 +207,15 @@ void addMorse(char input)
             }
             if (wins == 5)
             {
-                printf("Next Level!\n");
                 level++;
                 if (level > 4)
                 {
                     printf("You have reached the end! Congratulations!\n");
                     end_the_game();
                     return;
+                }
+                else{
+                    printf("Next Level!\n");
                 }
                 wins = 0;
             }
@@ -408,7 +411,7 @@ void end_the_game()
     printf("Number of correct answers: %d\n", correct_answers);
     printf("Number of incorrect answers: %d\n", incorrect_answers);
     printf("Number of lives left: %d\n", lives);
-    printf("Accuracy: %f\n", (correct_answers / (correct_answers + incorrect_answers)) * 100);
+    printf("Accuracy: %f\n", (double)((double)correct_answers / ((double)correct_answers + (double)incorrect_answers)) * 100);
 }
 
 // translate the sequence of dots and dashes to letters and words
