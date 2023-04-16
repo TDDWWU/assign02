@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
@@ -163,6 +164,7 @@ void addMorse(char input)
                 printf("\nInvalid input!\n");
                 printf("Please try again!\n");
                 printf("The translated input was: %s \n", sequence_to_letters());
+                printf("+---------------------------------------------------------------------------------------+\n");
                 newSequence();
                 return;
             }
@@ -411,7 +413,11 @@ void end_the_game()
     printf("Number of correct answers: %d\n", correct_answers);
     printf("Number of incorrect answers: %d\n", incorrect_answers);
     printf("Number of lives left: %d\n", lives);
-    printf("Accuracy: %f\n", (double)((double)correct_answers / ((double)correct_answers + (double)incorrect_answers)) * 100);
+    int total_questions_attempted = correct_answers + incorrect_answers;
+    //float accuracy = (float) correct_answers / total_questions_attempted;
+
+    printf("Accuracy: %d/%d\n", correct_answers, total_questions_attempted);
+
 }
 
 // translate the sequence of dots and dashes to letters and words
@@ -571,6 +577,7 @@ int main()
     printf("2. Medium (hint: %s)\n", answers[27]);
     printf("3. Hard (hint: %s)\n", answers[28]);
     printf("4. Impossible (hint: %s)\n", answers[29]);
+    printf("+---------------------------------------------------------------------------------------+\n");
     // printf("Enter the sequence for the level difficutly number\n");
     watchdog_update();
     main_asm(); // Jump into the ASM code
