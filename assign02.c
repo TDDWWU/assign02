@@ -266,13 +266,13 @@ void generate_answer()
     srand((unsigned)time(&t));
     if (level == 1 || level == 2)
     {
-        int random = rand() % 26;
+        int random = rand() % 36;
         answer = answers[random];
         answer_name = answer_names[random];
     }
     else if (level == 3 || level == 4)
     {
-        int random = rand() % 28;
+        int random = rand() % 18;
         answer = answer_word[random];
         answer_name = answer_word_names[random];
     }
