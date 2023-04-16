@@ -21,11 +21,11 @@ char *sequence; // pointer to the sequence
 char *answer;
 char *answer_name;
 
-char *answers[26];
-char *answer_names[26];
+char *answers[36];
+char *answer_names[36];
 
-char *answer_word[28];
-char *answer_word_names[28];
+char *answer_word[18];
+char *answer_word_names[18];
 
 int correct_answers = 0;
 int incorrect_answers = 0;
@@ -142,18 +142,19 @@ void addMorse(char input)
         printf("\n");
         if (level == 0)
         {
-            if (check_morse_code(answer_word[19]))
+            if (check_morse_code(answers[26]))
             {
                 level = 1;
             }
-            else if (check_morse_code(answer_word[20]))
+            else if (check_morse_code(answers[27]))
             {
                 level = 2;
             }
-            else if (check_morse_code(answer_word[21])){
+            else if (check_morse_code(answers[28]))
+            {
                 level = 3;
             }
-            else if (check_morse_code(answer_word[22])){
+            else if (check_morse_code(answers[29])){
                 level = 4;
             }
             else
@@ -562,10 +563,10 @@ int main()
     printf("To advance to the next level, get 5 right answers in a row.\n");
     printf("+---------------------------------------------------------------------------------------+\n");
     printf("You can choose the difficulty level by entering the sequence for the level number:\n");
-    printf("1. Easy (hint: %s)\n", answer_word[19]);
-    printf("2. Medium (hint: %s)\n", answer_word[20]);
-    printf("3. Hard (hint: %s)\n", answer_word[21]);
-    printf("4. Impossible (hint: %s)\n", answer_word[22]);
+    printf("1. Easy (hint: %s)\n", answers[26]);
+    printf("2. Medium (hint: %s)\n", answers[27]);
+    printf("3. Hard (hint: %s)\n", answers[28]);
+    printf("4. Impossible (hint: %s)\n", answers[29]);
     // printf("Enter the sequence for the level difficutly number\n");
     watchdog_update();
     main_asm(); // Jump into the ASM code
