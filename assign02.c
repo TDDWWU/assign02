@@ -340,16 +340,16 @@ void initialise_answers()
     answer_names[23] = "X";
     answer_names[24] = "Y";
     answer_names[25] = "Z";
-    answer_names[18] = ZERO;
-    answer_names[19] = ONE;
-    answer_names[20] = TWO;
-    answer_names[21] = THREE;
-    answer_names[22] = FOUR;
-    answer_names[23] = FIVE;
-    answer_names[24] = SIX;
-    answer_names[25] = SEVEN;
-    answer_names[26] = EIGHT;
-    answer_names[27] = NINE;
+    answer_names[26] = "ZERO";
+    answer_names[27] = "ONE";
+    answer_names[28] = "TWO";
+    answer_names[29] = "THREE";
+    answer_names[30] = "FOUR";
+    answer_names[31] = "FIVE";
+    answer_names[32] = "SIX";
+    answer_names[33] = "SEVEN";
+    answer_names[34] = "EIGHT";
+    answer_names[35] = "NINE";
 
     answer_word[0] = TO;
     answer_word[1] = ME;
