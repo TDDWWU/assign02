@@ -170,7 +170,7 @@ end_write:
      ldr      r0,=GPIO_BTN_RISE_MSK
      ldr      r1,=(IO_BANK0_BASE+IO_BANK0_INTR2_OFFSET)
      str      r0,[r1]
-     b        end_all
+     b        end_all   @branch to the end part
 
 
 button_press:
