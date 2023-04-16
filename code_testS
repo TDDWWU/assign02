@@ -1,0 +1,155 @@
+void read()
+{
+    watchdog_enable(0x2328, 1);
+    if(current_level ==1 ||current_level ==2 || current_level ==0)
+{
+    if (compare_morse(current_morse, ".-"))
+    {
+        current_char = 'A';
+    }
+    else if (compare_morse(current_morse, "-..."))
+    {
+        current_char = 'B';
+    }
+    else if (compare_morse(current_morse, "-.-."))
+    {
+        current_char = 'C';
+    }
+    else if (compare_morse(current_morse, "-.."))
+    {
+        current_char = 'D';
+    }
+    else if (compare_morse(current_morse, "."))
+    {
+        current_char = 'E';
+    }
+    else if (compare_morse(current_morse, "..-."))
+    {
+        current_char = 'F';
+    }
+    else if (compare_morse(current_morse, "--."))
+    {
+        current_char = 'G';
+    }
+    else if (compare_morse(current_morse, "...."))
+    {
+        current_char = 'H';
+    }
+    else if (compare_morse(current_morse, ".."))
+    {
+        current_char = 'I';
+    }
+    else if (compare_morse(current_morse, ".---"))
+    {
+        current_char = 'J';
+    }
+    else if (compare_morse(current_morse, "-.-"))
+    {
+        current_char = 'K';
+    }
+    else if (compare_morse(current_morse, ".-.."))
+    {
+        current_char = 'L';
+    }
+    else if (compare_morse(current_morse, "--"))
+    {
+        current_char = 'M';
+    }
+    else if (compare_morse(current_morse, "-."))
+    {
+        current_char = 'N';
+    }
+    else if (compare_morse(current_morse, "---"))
+    {
+        current_char = 'O';
+    }
+    else if (compare_morse(current_morse, ".--."))
+    {
+        current_char = 'P';
+    }
+    else if (compare_morse(current_morse, "--.-"))
+    {
+        current_char = 'Q';
+    }
+    else if (compare_morse(current_morse, ".-."))
+    {
+        current_char = 'R';
+    }
+    else if (compare_morse(current_morse, "..."))
+    {
+        current_char = 'S';
+    }
+    else if (compare_morse(current_morse, "-"))
+    {
+        current_char = 'T';
+    }
+    else if (compare_morse(current_morse, "..-"))
+    {
+        current_char = 'U';
+    }
+    else if (compare_morse(current_morse, "...-"))
+    {
+        current_char = 'V';
+    }
+    else if (compare_morse(current_morse, ".--"))
+    {
+        current_char = 'W';
+    }
+    else if (compare_morse(current_morse, "-..-"))
+    {
+        current_char = 'X';
+    }
+    else if (compare_morse(current_morse, "-.--"))
+    {
+        current_char = 'Y';
+    }
+    else if (compare_morse(current_morse, "--.."))
+    {
+        current_char = 'Z';
+    }
+    else if(compare_morse(current_morse,"-----"))
+{
+    current_char = '0';
+}
+else if(compare_morse(current_morse,".----"))
+{
+    current_char = '1';
+}
+else if(compare_morse(current_morse,"..---"))
+{
+    current_char = '2';
+}
+else if(compare_morse(current_morse,"...--"))
+{
+    current_char = '3';
+}
+else if(compare_morse(current_morse,"....-"))
+{
+    current_char = '4';
+}
+else if(compare_morse(current_morse,"....."))
+{
+    current_char = '5';
+}
+else if(compare_morse(current_morse,"-...."))
+{
+    current_char = '6';
+}
+else if(compare_morse(current_morse,"--..."))
+{
+    current_char = '7';
+}
+else if(compare_morse(current_morse,"---.."))
+{
+    current_char = '8';
+}
+else if(compare_morse(current_morse,"----."))
+{
+    current_char = '9';
+}
+else
+{
+    current_char = '?';
+}
+printf("The mosre code for character entered represents:%c \n", current_char);
+}
