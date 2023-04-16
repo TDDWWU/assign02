@@ -163,7 +163,7 @@ space_input:
      subs     r0,r4,r3
      b        not_space
 end_write:
-     ldr      r1,=(TIMER_BASE+TIMER_TIMELR_OFFSET)
+     ldr      r1,=(TIMER_BASE+TIMER_TIMELR_OFFSET)@the address for read time
      ldr      r0,[r1]
      ldr      r1,=end_time  @record the button released time
      str      r0,[r1]
@@ -171,6 +171,7 @@ end_write:
      ldr      r1,=(IO_BANK0_BASE+IO_BANK0_INTR2_OFFSET)
      str      r0,[r1]
      b        end_all
+
 
 button_press:
      ldr      r1,=(TIMER_BASE+TIMER_TIMELR_OFFSET)
