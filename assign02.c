@@ -154,7 +154,8 @@ void addMorse(char input)
             {
                 level = 3;
             }
-            else if (check_morse_code(answers[29])){
+            else if (check_morse_code(answers[29]))
+            {
                 level = 4;
             }
             else
