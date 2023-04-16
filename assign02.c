@@ -135,7 +135,7 @@ void addMorse(char input)
 {
     if (input != '\0')
     {
-        add_morse_code(input);
+       add_morse_code(input);
     }
     else
     {
